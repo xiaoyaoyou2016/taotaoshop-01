@@ -12,6 +12,7 @@
         <module>../taotao-common</module>
         <module>../taotao-manager</module>
     </modules>
+
     <name>taotao-parent</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>

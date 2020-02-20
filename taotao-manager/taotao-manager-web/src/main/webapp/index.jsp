@@ -1,8 +1,16 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: 陈刀仔
+  Date: 2020/2/20
+  Time: 10:30
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<title>
-    淘淘商城
-</title>
+<head>
+    <title>淘淘商城</title>
+</head>
 <body>
-<h2>Hello World!</h2>
+成功了
 </body>
 </html>
