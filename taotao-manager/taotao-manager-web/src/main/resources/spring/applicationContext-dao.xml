@@ -23,7 +23,7 @@
     </bean>
 <!--    配置sqlsessionFactory-->
 <!--    用到org.mybatis:mybatis-spring:1.2.2的SqlSessionFactoryBean-->
-    <bean id="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    <bean id="sessionFactory" class="FixedSqlSessionFactory">
         <property name="configLocation" value="classpath:mybatis/SqlMapConfig.xml"></property>
 <!--        ref 引用，引用了数据库连接池下面bean 的id=dataSource-->
         <property name="dataSource" ref="dataSource"></property>

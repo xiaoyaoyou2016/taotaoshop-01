@@ -26,13 +26,13 @@ public class ItemServiceImpl implements ItemService {
     public TbItem getItemById(long itemId) {
 //        TbItem item = itemMapper.selectByPrimaryKey(itemId);
         TbItem tbItem = itemMapper.selectByPrimaryKey(itemId);
-
-        TbItemExample itemExample = new TbItemExample();
+//      根据主键查询
+        TbItemExample example = new TbItemExample();
         //添加查询条件
-        TbItemExample.Criteria criteria = itemExample.createCriteria();
+        TbItemExample.Criteria criteria = example.createCriteria();
         criteria.andIdEqualTo(itemId);
-//        List<TbItem> list = itemMapper.selectByExample(itemExample);
-        List<TbItem> list = itemMapper.selectByExample(itemExample);
+//        List<TbItem> list = itemMapper.selectByExample(example);
+        List<TbItem> list = itemMapper.selectByExample(example);
         if (list != null && list.size() > 0) {
             TbItem item = list.get(0);
             return item;
