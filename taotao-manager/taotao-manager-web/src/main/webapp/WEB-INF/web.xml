@@ -5,7 +5,9 @@
          id="WebApp_ID" version="2.5">
 
     <!--    <display-name>Archetype Created Web Application</display-name>-->
-    <display-name>taotao-manager-web</display-name>
+<!--    这个地方错了-->
+<!--    <display-name>taotao-manager-web</display-name>-->
+    <display-name>taotao-manager</display-name>
 
     <!--     加载spring容器-->
     <listener>
