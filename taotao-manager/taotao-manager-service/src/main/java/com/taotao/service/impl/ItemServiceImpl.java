@@ -42,20 +42,5 @@ public class ItemServiceImpl implements ItemService {
         return null;
     }
 
-//    @Override
-//    public EUDataGridResult getItemList(int page,int rows){
-//        //查询商品列表
-//        TbItemExample example=new TbItemExample();
-//        //分页
-//        PageHelper.startPage(page, rows);
-//        List<TbItem> list = itemMapper.selectByExample(example);
-//        //创建返回值对象
-//        EUDataGridResult result=new EUDataGridResult();
-//        result.setRows(list);
-//
-//        //包装list,取出total
-//        PageInfo<TbItem> pageInfo=new PageInfo<>(list);
-//        result.setTotal((int) pageInfo.getTotal());
-//        return result;
-//    }
+
 }
