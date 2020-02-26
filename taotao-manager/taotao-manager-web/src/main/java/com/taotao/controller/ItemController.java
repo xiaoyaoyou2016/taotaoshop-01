@@ -3,7 +3,6 @@ package com.taotao.controller;
 import com.taotao.pojo.TbItem;
 import com.taotao.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Required;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,10 +18,11 @@ public class ItemController {
     @Autowired
     private ItemService itemService;
 
-    @RequestMapping("item/{itemId}")
+    @RequestMapping("/item/{itemId}")
     @ResponseBody
     public TbItem getItemBId(@PathVariable Long itemId){
         TbItem item = itemService.getItemById(itemId);
         return item;
     }
+
 }
